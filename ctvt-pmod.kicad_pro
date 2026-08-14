@@ -1,0 +1,18 @@
+{
+  "board": {},
+  "boards": [],
+  "cvpcb": {},
+  "erc": {},
+  "libraries": {},
+  "meta": {
+    "filename": "ctvt-pmod.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {},
+  "pcbnew": {},
+  "schematic": {},
+  "sheets": [],
+  "text_variables": {
+    "REVISION": "0.1"
+  }
+}

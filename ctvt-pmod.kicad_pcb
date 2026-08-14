@@ -1,0 +1,129 @@
+(kicad_pcb
+	(version 20250114)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(general
+		(thickness 1.6)
+	)
+	(paper "A4")
+	(title_block
+		(title "CTVT Energy Monitor PMOD")
+		(date "2026-08-14")
+		(rev "0.1")
+		(company "Whatnick")
+		(comment 1 "Initial architecture placeholder - not for measurement")
+		(comment 2 "Isolated CT and VT inputs only; never connect mains directly")
+	)
+	(layers
+		(0 "F.Cu" signal)
+		(31 "B.Cu" signal)
+		(36 "B.SilkS" user "b.silkscreen")
+		(37 "F.SilkS" user "f.silkscreen")
+		(44 "Edge.Cuts" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+	)
+	(gr_rect
+		(start 20 20)
+		(end 53 40.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "3bc67694-e430-4c7a-bbd9-94af94064675")
+	)
+	(gr_rect
+		(start 21.5 25)
+		(end 30.5 38.5)
+		(stroke
+			(width 0.25)
+			(type dash)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "3660f887-2957-4914-afd6-5929dc365df8")
+	)
+	(gr_rect
+		(start 32 25)
+		(end 41 38.5)
+		(stroke
+			(width 0.25)
+			(type dash)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "e194e501-bac6-49a7-9158-bcf8141e2621")
+	)
+	(gr_rect
+		(start 42.5 25)
+		(end 51.5 38.5)
+		(stroke
+			(width 0.25)
+			(type dash)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "2fe2b885-1056-45ac-ab69-7d87ddd33219")
+	)
+	(gr_text "CTVT PMOD"
+		(at 36.5 22.2 0)
+		(layer "F.SilkS")
+		(uuid "234cf4df-dd84-4b85-be79-a12b4c850ce3")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.25)
+			)
+			(justify)
+		)
+	)
+	(gr_text "CT AFE"
+		(at 26 31.75 90)
+		(layer "F.SilkS")
+		(uuid "3e3ca9ce-dad7-4f4f-81cb-43e7bf5934cb")
+		(effects
+			(font
+				(size 1.1 1.1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(gr_text "VT AFE"
+		(at 36.5 31.75 90)
+		(layer "F.SilkS")
+		(uuid "0c2807b4-02ae-436d-9888-d6a7f32e10cd")
+		(effects
+			(font
+				(size 1.1 1.1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(gr_text "ADC + PMOD"
+		(at 47 31.75 90)
+		(layer "F.SilkS")
+		(uuid "54882c82-9d5e-43d9-aec8-96cec0397468")
+		(effects
+			(font
+				(size 1.1 1.1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(gr_text "PLACEHOLDER - NOT FOR MEASUREMENT"
+		(at 36.5 39.25 0)
+		(layer "B.SilkS")
+		(uuid "f9a26292-e6a5-48b2-babd-b969368ba38b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(embedded_fonts no)
+)
