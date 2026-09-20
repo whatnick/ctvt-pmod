@@ -5,8 +5,20 @@
 *.kicad_sch-bak
 fp-info-cache
 ~*.lck
+__pycache__/
+*.py[cod]
 
 # Manufacturing outputs
 bom/
 gerbers/
 renders/
+
+# Intermediate validation and router exchange files
+*.dsn
+*.ses
+!routing/*.ses
+*.net
+*.pdf
+*.json
+*.png
+!docs/images/*.png

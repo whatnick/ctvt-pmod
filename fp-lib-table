@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ctvt-pmod")(type "KiCad")(uri "${KIPRJMOD}/ctvt-pmod.pretty")(options "")(descr "Project-local footprints"))
+)
