@@ -20,6 +20,15 @@ PMOD connection for stacking or logic-analyzer access.
 |---|---|
 | ![Component-side render](docs/images/ctvt-pmod-top.png) | ![Rear render](docs/images/ctvt-pmod-bottom.png) |
 
+## Digital companion
+
+The [CTVT Energy DSP](https://github.com/whatnick/tt-ctvt-energy-dsp)
+repository contains the companion Tiny Tapeout design. Its working first stage
+captures ADS131M02 frames, performs time-shared multiply-accumulate operations,
+and publishes coherent voltage, current, and active-power moments over a host
+SPI interface. The roadmap adds calibrated RMS and energy, phase/frequency,
+power-quality events, and resource-efficient Goertzel harmonic analysis.
+
 ## Signal path
 
 ```text
