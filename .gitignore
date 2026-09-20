@@ -5,6 +5,8 @@
 *.kicad_sch-bak
 fp-info-cache
 ~*.lck
+__pycache__/
+*.py[cod]
 
 # Manufacturing outputs
 bom/
