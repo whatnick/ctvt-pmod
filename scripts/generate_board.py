@@ -9,7 +9,6 @@ ROOT = Path(__file__).resolve().parents[1]
 BOARD_PATH = ROOT / "ctvt-pmod.kicad_pcb"
 FOOTPRINTS = Path(r"C:\Program Files\KiCad\10.0\share\kicad\footprints")
 LOCAL_FOOTPRINTS = ROOT / "ctvt-pmod.pretty"
-PLUGIN = pcbnew.PCB_IO_MGR.FindPlugin(pcbnew.PCB_IO_MGR.KICAD_SEXP)
 
 BOARD_LEFT = 20.0
 BOARD_TOP = 20.0
@@ -32,7 +31,7 @@ def net(board: pcbnew.BOARD, name: str) -> pcbnew.NETINFO_ITEM:
 
 def load_footprint(library: str, name: str) -> pcbnew.FOOTPRINT:
     library_path = LOCAL_FOOTPRINTS if library == "ctvt-pmod" else FOOTPRINTS / f"{library}.pretty"
-    footprint = PLUGIN.FootprintLoad(str(library_path), name)
+    footprint = pcbnew.FootprintLoad(str(library_path), name)
     if footprint is None:
         raise FileNotFoundError(f"{library}:{name}")
     return footprint
@@ -68,7 +67,7 @@ def style_fields(footprint: pcbnew.FOOTPRINT) -> None:
     reference.SetLayer(pcbnew.F_SilkS)
     reference.SetVisible(True)
     reference.SetTextSize(vmm(0.8, 0.8))
-    reference.SetTextThickness(pcbnew.FromMM(0.15))
+    reference.SetTextThickness(pcbnew.FromMM(0.2))
     value = footprint.Value()
     value.SetLayer(pcbnew.F_Fab)
     value.SetVisible(True)
@@ -155,7 +154,7 @@ def add_text(
     item.SetPosition(vmm(x, y))
     item.SetLayer(layer)
     item.SetTextSize(vmm(size, size))
-    item.SetTextThickness(pcbnew.FromMM(max(0.15, size * 0.16)))
+    item.SetTextThickness(pcbnew.FromMM(0.2))
     item.SetTextAngle(pcbnew.EDA_ANGLE(rotation, pcbnew.DEGREES_T))
     if layer in (pcbnew.B_SilkS, pcbnew.B_Fab):
         item.SetMirrored(True)
@@ -356,32 +355,32 @@ def add_components(board: pcbnew.BOARD) -> None:
         )
 
     reference_positions = {
-        "J1": (22.5, 24.0, 90.0),
+        "J1": (24.13, 23.876, 90.0),
         "J2": (22.0, 70.0, 90.0),
         "J3": (47.5, 73.0, 90.0),
         "J4": (43.0, 30.5, 90.0),
         "U1": (40.0, 47.0, 90.0),
         "R1": (26.0, 64.8, 0.0),
         "R2": (30.0, 64.8, 0.0),
-        "R3": (29.0, 55.8, 0.0),
-        "R4": (33.0, 55.8, 0.0),
+        "R3": (28.956, 56.134, 0.0),
+        "R4": (33.02, 56.261, 0.0),
         "R5": (39.0, 61.3, 0.0),
         "R6": (43.0, 61.3, 0.0),
         "R7": (39.0, 67.7, 0.0),
         "R8": (43.0, 67.7, 0.0),
-        "R9": (41.0, 55.8, 0.0),
-        "R10": (37.0, 55.8, 0.0),
+        "R9": (41.0, 56.261, 0.0),
+        "R10": (37.0, 56.134, 0.0),
         "R11": (39.0, 37.3, 0.0),
         "R12": (43.0, 37.3, 0.0),
         "R13": (33.0, 37.3, 0.0),
         "C1": (31.0, 59.7, 0.0),
         "C2": (35.5, 59.7, 0.0),
-        "C3": (23.5, 48.5, 0.0),
-        "C4": (23.5, 51.5, 0.0),
-        "C5": (23.5, 39.5, 0.0),
-        "C6": (23.5, 42.5, 0.0),
+        "C3": (24.257, 48.514, 0.0),
+        "C4": (24.384, 51.435, 0.0),
+        "C5": (24.13, 39.497, 0.0),
+        "C6": (24.13, 42.5, 0.0),
         "C7": (37.5, 41.5, 0.0),
-        "FB1": (23.5, 45.5, 0.0),
+        "FB1": (24.511, 45.466, 0.0),
         "D1": (34.0, 69.5, 0.0),
         "D2": (36.5, 73.0, 0.0),
     }
@@ -404,10 +403,10 @@ def configure_board(board: pcbnew.BOARD) -> None:
 
 
 def add_markings(board: pcbnew.BOARD) -> None:
-    add_text(board, "CTVT PMOD", 35.0, 36.0, 1.0)
-    add_text(board, "CT", 28.0, 88.0, 0.9)
+    add_text(board, "CTVT PMOD", 46.482, 30.353, 0.8, rotation=90)
+    add_text(board, "CT", 28.0, 88.0, 0.8)
     add_text(board, "AC-AC ONLY", 47.0, 80.0, 0.8, pcbnew.B_SilkS, rotation=90)
-    add_text(board, "Tiny Tapeout", 22.0, 45.0, 0.8, rotation=90)
+    add_text(board, "Made for\nTiny Tapeout", 23.114, 31.623, 0.8, rotation=90)
     add_text(board, "REV 1.0 | CERN-OHL-S-2.0+", 35.0, 36.0, 0.8, pcbnew.B_SilkS)
     add_text(board, "NO DIRECT MAINS", 35.0, 39.0, 0.8, pcbnew.B_SilkS)
 
