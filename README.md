@@ -137,7 +137,9 @@ overhang independently or
 Run `scripts\add_mechanical_features.py` to reapply the 3 mm corner radii and
 two M2 mounting holes without disturbing routed copper or manual silkscreen.
 Manufacturing exports are generated into ignored `gerbers/` and `bom/`
-directories.
+directories. The reviewed orderable BOM and DigiKey sourcing notes are
+committed in [`docs/ctvt-pmod-digikey-bom.csv`](docs/ctvt-pmod-digikey-bom.csv)
+and [`docs/bom-sourcing.md`](docs/bom-sourcing.md).
 
 ## Repository contents
 
