@@ -4058,6 +4058,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey PN" "CP-3523SJCT-ND"
+			(at 38.1 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "3.5 mm stereo CT input jack"
 			(at 38.1 45.72 0)
 			(effects
@@ -4119,6 +4128,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Good-Ark Semiconductor"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GSMF3.3CA"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "4786-GSMF3.3CACT-ND"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -4171,7 +4207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer" "TE Connectivity Holsworthy"
 			(at 76.2 46.99 0)
 			(effects
 				(font
@@ -4180,7 +4216,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TNPW08056R49BEEA"
+		(property "MPN" "RN73C2A6R49BTDF"
 			(at 76.2 46.99 0)
 			(effects
 				(font
@@ -4189,7 +4225,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CT split burden resistor, 25 ppm/K"
+		(property "Supplier" "Mouser"
+			(at 76.2 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CT split burden resistor, 10 ppm/K"
 			(at 76.2 46.99 0)
 			(effects
 				(font
@@ -4250,7 +4295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer" "TE Connectivity Holsworthy"
 			(at 76.2 54.61 0)
 			(effects
 				(font
@@ -4259,7 +4304,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TNPW08056R49BEEA"
+		(property "MPN" "RN73C2A6R49BTDF"
 			(at 76.2 54.61 0)
 			(effects
 				(font
@@ -4268,7 +4313,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CT split burden resistor, 25 ppm/K"
+		(property "Supplier" "Mouser"
+			(at 76.2 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CT split burden resistor, 10 ppm/K"
 			(at 76.2 54.61 0)
 			(effects
 				(font
@@ -4329,6 +4383,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Susumu"
+			(at 106.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1608P-102-B-T5"
+			(at 106.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "RG16P1.0KBCT-ND"
+			(at 106.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -4373,6 +4454,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Susumu"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1608P-102-B-T5"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "RG16P1.0KBCT-ND"
 			(at 106.68 57.15 0)
 			(effects
 				(font
@@ -4442,7 +4550,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM1555C1H103JA01D"
+		(property "MPN" "GRM1885C1H103JA01D"
+			(at 132.08 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "490-9666-1-ND"
 			(at 132.08 50.8 0)
 			(effects
 				(font
@@ -4530,6 +4647,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey PN" "CP-002BHPJCT-ND"
+			(at 38.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "2.0 mm SMT barrel jack for isolated AC-AC transformer"
 			(at 38.1 104.14 0)
 			(effects
@@ -4591,6 +4717,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Littelfuse"
+			(at 67.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMBJ18CA"
+			(at 67.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "SMBJ18CALFCT-ND"
+			(at 67.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -4635,6 +4788,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 83.82 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 83.82 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-6AEB104V"
+			(at 83.82 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "P100KDACT-ND"
 			(at 83.82 102.87 0)
 			(effects
 				(font
@@ -4704,6 +4884,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 83.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERA-6AEB104V"
+			(at 83.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "P100KDACT-ND"
+			(at 83.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "VT balanced high-side divider resistor"
 			(at 83.82 115.57 0)
 			(effects
@@ -4757,6 +4964,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 106.68 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 106.68 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0805BRD076K49L"
+			(at 106.68 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "YAG1965CT-ND"
 			(at 106.68 106.68 0)
 			(effects
 				(font
@@ -4826,6 +5060,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0805BRD076K49L"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "YAG1965CT-ND"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "VT balanced low-side divider resistor"
 			(at 106.68 114.3 0)
 			(effects
@@ -4887,6 +5148,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Susumu"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1608P-102-B-T5"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "RG16P1.0KBCT-ND"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -4931,6 +5219,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Susumu"
+			(at 132.08 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RG1608P-102-B-T5"
+			(at 132.08 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "RG16P1.0KBCT-ND"
 			(at 132.08 115.57 0)
 			(effects
 				(font
@@ -5000,7 +5315,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM1555C1H103JA01D"
+		(property "MPN" "GRM1885C1H103JA01D"
+			(at 152.4 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "490-9666-1-ND"
 			(at 152.4 109.22 0)
 			(effects
 				(font
@@ -5088,6 +5412,15 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey PN" "296-ADS131M02IPWRCT-ND"
+			(at 177.8 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Dual simultaneous-sampling 24-bit delta-sigma ADC"
 			(at 177.8 76.2 0)
 			(effects
@@ -5149,7 +5482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "TDK"
 			(at 147.32 22.86 0)
 			(effects
 				(font
@@ -5158,7 +5491,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "BLM15AG601SN1D"
+		(property "MPN" "MPZ1608S601ATA00"
+			(at 147.32 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "445-MPZ1608S601ATA00CT-ND"
 			(at 147.32 22.86 0)
 			(effects
 				(font
@@ -5228,6 +5570,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 165.1 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C105K4RACTU"
+			(at 165.1 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "399-C0603C105K4RACTUCT-ND"
+			(at 165.1 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -5272,6 +5641,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 165.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 165.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 165.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "399-C0603C104K5RACTUCT-ND"
 			(at 165.1 30.48 0)
 			(effects
 				(font
@@ -5332,6 +5728,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 215.9 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C105K4RACTU"
+			(at 215.9 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "399-C0603C105K4RACTUCT-ND"
+			(at 215.9 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -5376,6 +5799,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 215.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 215.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C104K5RACTU"
+			(at 215.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "399-C0603C104K5RACTUCT-ND"
 			(at 215.9 30.48 0)
 			(effects
 				(font
@@ -5436,6 +5886,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C0603C224K4RACTU"
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "399-C0603C224K4RACTUCT-ND"
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -5480,6 +5957,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 218.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics"
+			(at 218.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
+			(at 218.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "RMCF0603FT10K0CT-ND"
 			(at 218.44 111.76 0)
 			(effects
 				(font
@@ -5540,6 +6044,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Stackpole Electronics"
+			(at 218.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
+			(at 218.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "RMCF0603FT10K0CT-ND"
+			(at 218.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -5592,6 +6123,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 218.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0733RL"
+			(at 218.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "13-RC0603FR-0733RLCT-ND"
+			(at 218.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ctvt-pmod"
 				(path "/d673ee32-8f55-5bd1-8d35-67f577f6e7d8"
@@ -5636,6 +6194,33 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samtec"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TSW-106-08-G-D-RA"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "612-TSW-106-08-G-D-RA-ND"
 			(at 248.92 78.74 0)
 			(effects
 				(font
@@ -5715,6 +6300,15 @@
 			)
 		)
 		(property "MPN" "613012243121"
+			(at 248.92 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey PN" "732-613012243121-ND"
 			(at 248.92 157.48 0)
 			(effects
 				(font
