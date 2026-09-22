@@ -14,6 +14,8 @@ BOARD_LEFT = 20.0
 BOARD_TOP = 20.0
 BOARD_RIGHT = 50.0
 BOARD_BOTTOM = 90.0
+CORNER_RADIUS = 3.0
+MOUNTING_HOLE_POSITIONS = ((23.0, 23.0), (47.0, 23.0))
 
 
 def vmm(x: float, y: float) -> pcbnew.VECTOR2I:
@@ -122,22 +124,71 @@ def renumber_pmod(footprint: pcbnew.FOOTPRINT) -> None:
         pad.SetNumber(mapping[old])
 
 
+def add_edge(
+    board: pcbnew.BOARD,
+    start: tuple[float, float],
+    end: tuple[float, float],
+    mid: tuple[float, float] | None = None,
+) -> None:
+    edge = pcbnew.PCB_SHAPE(board)
+    edge.SetShape(pcbnew.SHAPE_T_ARC if mid else pcbnew.SHAPE_T_SEGMENT)
+    if mid:
+        edge.SetArcGeometry(vmm(*start), vmm(*mid), vmm(*end))
+    else:
+        edge.SetStart(vmm(*start))
+        edge.SetEnd(vmm(*end))
+    edge.SetLayer(pcbnew.Edge_Cuts)
+    edge.SetWidth(pcbnew.FromMM(0.15))
+    board.Add(edge)
+
+
 def add_outline(board: pcbnew.BOARD) -> None:
-    corners = [
-        (BOARD_LEFT, BOARD_TOP),
-        (BOARD_RIGHT, BOARD_TOP),
-        (BOARD_RIGHT, BOARD_BOTTOM),
-        (BOARD_LEFT, BOARD_BOTTOM),
-        (BOARD_LEFT, BOARD_TOP),
-    ]
-    for start, end in zip(corners, corners[1:]):
-        line = pcbnew.PCB_SHAPE(board)
-        line.SetShape(pcbnew.SHAPE_T_SEGMENT)
-        line.SetStart(vmm(*start))
-        line.SetEnd(vmm(*end))
-        line.SetLayer(pcbnew.Edge_Cuts)
-        line.SetWidth(pcbnew.FromMM(0.15))
-        board.Add(line)
+    radius = CORNER_RADIUS
+    arc_offset = radius * (1.0 - 2**-0.5)
+    add_edge(board, (BOARD_LEFT + radius, BOARD_TOP), (BOARD_RIGHT - radius, BOARD_TOP))
+    add_edge(
+        board,
+        (BOARD_RIGHT - radius, BOARD_TOP),
+        (BOARD_RIGHT, BOARD_TOP + radius),
+        (BOARD_RIGHT - arc_offset, BOARD_TOP + arc_offset),
+    )
+    add_edge(board, (BOARD_RIGHT, BOARD_TOP + radius), (BOARD_RIGHT, BOARD_BOTTOM - radius))
+    add_edge(
+        board,
+        (BOARD_RIGHT, BOARD_BOTTOM - radius),
+        (BOARD_RIGHT - radius, BOARD_BOTTOM),
+        (BOARD_RIGHT - arc_offset, BOARD_BOTTOM - arc_offset),
+    )
+    add_edge(board, (BOARD_RIGHT - radius, BOARD_BOTTOM), (BOARD_LEFT + radius, BOARD_BOTTOM))
+    add_edge(
+        board,
+        (BOARD_LEFT + radius, BOARD_BOTTOM),
+        (BOARD_LEFT, BOARD_BOTTOM - radius),
+        (BOARD_LEFT + arc_offset, BOARD_BOTTOM - arc_offset),
+    )
+    add_edge(board, (BOARD_LEFT, BOARD_BOTTOM - radius), (BOARD_LEFT, BOARD_TOP + radius))
+    add_edge(
+        board,
+        (BOARD_LEFT, BOARD_TOP + radius),
+        (BOARD_LEFT + radius, BOARD_TOP),
+        (BOARD_LEFT + arc_offset, BOARD_TOP + arc_offset),
+    )
+
+
+def add_mounting_holes(board: pcbnew.BOARD) -> None:
+    for index, (x, y) in enumerate(MOUNTING_HOLE_POSITIONS, start=1):
+        hole = add_footprint(
+            board,
+            f"H{index}",
+            "M2 mounting hole",
+            "MountingHole",
+            "MountingHole_2.2mm_M2",
+            x,
+            y,
+            0.0,
+            {},
+        )
+        hole.Reference().SetVisible(False)
 
 
 def add_text(
@@ -355,7 +406,7 @@ def add_components(board: pcbnew.BOARD) -> None:
         )
 
     reference_positions = {
-        "J1": (24.13, 23.876, 90.0),
+        "J1": (25.0, 23.876, 90.0),
         "J2": (22.0, 70.0, 90.0),
         "J3": (47.5, 73.0, 90.0),
         "J4": (43.0, 30.5, 90.0),
@@ -415,6 +466,7 @@ def main() -> None:
     board = pcbnew.BOARD()
     configure_board(board)
     add_outline(board)
+    add_mounting_holes(board)
     add_components(board)
     add_markings(board)
     pcbnew.SaveBoard(str(BOARD_PATH), board)
