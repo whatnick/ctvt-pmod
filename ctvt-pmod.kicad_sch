@@ -4207,7 +4207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer" "TE Connectivity Holsworthy"
 			(at 76.2 46.99 0)
 			(effects
 				(font
@@ -4216,7 +4216,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TNPW08056R49BEEA"
+		(property "MPN" "RN73C2A6R49BTDF"
 			(at 76.2 46.99 0)
 			(effects
 				(font
@@ -4225,7 +4225,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CT split burden resistor, 25 ppm/K; source outside DigiKey"
+		(property "Supplier" "Mouser"
+			(at 76.2 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CT split burden resistor, 10 ppm/K"
 			(at 76.2 46.99 0)
 			(effects
 				(font
@@ -4286,7 +4295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer" "TE Connectivity Holsworthy"
 			(at 76.2 54.61 0)
 			(effects
 				(font
@@ -4295,7 +4304,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TNPW08056R49BEEA"
+		(property "MPN" "RN73C2A6R49BTDF"
 			(at 76.2 54.61 0)
 			(effects
 				(font
@@ -4304,7 +4313,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CT split burden resistor, 25 ppm/K; source outside DigiKey"
+		(property "Supplier" "Mouser"
+			(at 76.2 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CT split burden resistor, 10 ppm/K"
 			(at 76.2 54.61 0)
 			(effects
 				(font

@@ -304,9 +304,10 @@ def build_legacy_schematic() -> str:
             3000,
             1850,
             {
-                "Manufacturer": "Vishay",
-                "MPN": "TNPW08056R49BEEA",
-                "Description": "CT split burden resistor, 25 ppm/K; source outside DigiKey",
+                "Manufacturer": "TE Connectivity Holsworthy",
+                "MPN": "RN73C2A6R49BTDF",
+                "Supplier": "Mouser",
+                "Description": "CT split burden resistor, 10 ppm/K",
             },
         ),
         Component(
@@ -317,9 +318,10 @@ def build_legacy_schematic() -> str:
             3000,
             2150,
             {
-                "Manufacturer": "Vishay",
-                "MPN": "TNPW08056R49BEEA",
-                "Description": "CT split burden resistor, 25 ppm/K; source outside DigiKey",
+                "Manufacturer": "TE Connectivity Holsworthy",
+                "MPN": "RN73C2A6R49BTDF",
+                "Supplier": "Mouser",
+                "Description": "CT split burden resistor, 10 ppm/K",
             },
         ),
         Component(
