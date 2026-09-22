@@ -234,7 +234,7 @@ def add_components(board: pcbnew.BOARD) -> None:
         "Tiny Tapeout PMOD",
         "Connector_PinHeader_2.54mm",
         "PinHeader_2x06_P2.54mm_Horizontal",
-        27.5,
+        28.65,
         25.0,
         90.0,
         {},
@@ -249,7 +249,7 @@ def add_components(board: pcbnew.BOARD) -> None:
         "613012243121",
         "ctvt-pmod",
         "PinSocket_2x06_P2.54mm_PMODHost1A",
-        40.2,
+        41.35,
         31.5,
         270.0,
         pmod_nets,
@@ -262,7 +262,7 @@ def add_components(board: pcbnew.BOARD) -> None:
         "Connector_Audio",
         "Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal",
         28.0,
-        80.9,
+        83.5,
         180.0,
         {"T": "CT_P", "R": "GND", "S": "CT_N"},
     )
@@ -407,10 +407,10 @@ def add_components(board: pcbnew.BOARD) -> None:
         )
 
     reference_positions = {
-        "J1": (25.0, 23.876, 90.0),
+        "J1": (26.15, 23.876, 90.0),
         "J2": (22.0, 70.0, 90.0),
         "J3": (47.5, 73.0, 90.0),
-        "J4": (43.0, 30.5, 90.0),
+        "J4": (44.15, 30.5, 90.0),
         "U1": (40.0, 47.0, 90.0),
         "R1": (26.0, 64.8, 0.0),
         "R2": (30.0, 64.8, 0.0),

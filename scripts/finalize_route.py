@@ -5,7 +5,7 @@ from pathlib import Path
 import pcbnew
 
 from add_branding import add_branding
-from adjust_stereo_jack import move_stereo_jack
+from adjust_stereo_jack import verify_stereo_jack_overhang
 from generate_board import TRACK_WIDTH
 
 
@@ -46,7 +46,7 @@ def main() -> None:
 
     add_ground_zone(board, pcbnew.F_Cu)
     add_ground_zone(board, pcbnew.B_Cu)
-    move_stereo_jack(board)
+    verify_stereo_jack_overhang(board)
     add_branding(board)
     pcbnew.ZONE_FILLER(board).Fill(board.Zones())
     pcbnew.SaveBoard(str(BOARD_PATH), board)
