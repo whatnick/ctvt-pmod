@@ -10,7 +10,8 @@ Tapeout ASIC projects.
 The routed KiCad 10 design is 30 mm x 70 mm with 3 mm corner radii and two
 2.2 mm non-plated M2 mounting holes at the PMOD end. The PMOD connectors are
 at one short edge; the CT and AC/AC transformer inputs face away from them at
-the opposite edge so adjacent PMODs remain usable.
+the opposite edge so adjacent PMODs remain usable. All routed signals use
+0.25 mm traces with 0.20 mm copper clearance.
 
 The narrow layout keeps the measurement front end beside other PMODs rather
 than blocking them. Both field connectors project beyond the board edge for
@@ -128,7 +129,7 @@ python scripts\generate_schematic.py
 ```
 
 `scripts/finalize_route.py` imports the saved Freerouting session, normalizes
-all traces to at least 0.20 mm, moves the stereo jack so its mating face
+all traces to at least 0.25 mm, moves the stereo jack so its mating face
 overhangs the PCB edge by 2.0 mm, adds the rear OSHW/Whatnick branding, and
 fills GND zones on both copper layers. Run `scripts\adjust_stereo_jack.py` or
 `scripts\add_branding.py` independently to reapply only that post-route change.

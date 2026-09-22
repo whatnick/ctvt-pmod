@@ -16,6 +16,7 @@ BOARD_RIGHT = 50.0
 BOARD_BOTTOM = 90.0
 CORNER_RADIUS = 3.0
 MOUNTING_HOLE_POSITIONS = ((23.0, 23.0), (47.0, 23.0))
+TRACK_WIDTH = 0.25
 
 
 def vmm(x: float, y: float) -> pcbnew.VECTOR2I:
@@ -451,6 +452,8 @@ def configure_board(board: pcbnew.BOARD) -> None:
     settings = board.GetDesignSettings()
     settings.m_MinClearance = pcbnew.FromMM(0.15)
     settings.m_CopperEdgeClearance = pcbnew.FromMM(0.25)
+    settings.m_TrackMinWidth = pcbnew.FromMM(TRACK_WIDTH)
+    settings.m_NetSettings.GetDefaultNetclass().SetTrackWidth(pcbnew.FromMM(TRACK_WIDTH))
 
 
 def add_markings(board: pcbnew.BOARD) -> None:

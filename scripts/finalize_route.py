@@ -6,6 +6,7 @@ import pcbnew
 
 from add_branding import add_branding
 from adjust_stereo_jack import move_stereo_jack
+from generate_board import TRACK_WIDTH
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,23 +28,6 @@ def add_ground_zone(board: pcbnew.BOARD, layer: int) -> None:
     board.Add(zone)
 
 
-def adjust_router_escape(board: pcbnew.BOARD) -> None:
-    old = pcbnew.VECTOR2I_MM(26.2239, 40.6511)
-    new = pcbnew.VECTOR2I_MM(26.0, 40.75)
-    adjusted = 0
-    for item in board.GetTracks():
-        if not isinstance(item, pcbnew.PCB_TRACK) or item.GetNetname() != "GND":
-            continue
-        if item.GetStart() == old:
-            item.SetStart(new)
-            adjusted += 1
-        if item.GetEnd() == old:
-            item.SetEnd(new)
-            adjusted += 1
-    if adjusted != 2:
-        raise RuntimeError(f"Expected to adjust two GND escape endpoints, found {adjusted}")
-
-
 def main() -> None:
     board = pcbnew.LoadBoard(str(BOARD_PATH))
 
@@ -55,12 +39,11 @@ def main() -> None:
     if not pcbnew.ImportSpecctraSES(board, str(SESSION_PATH)):
         raise RuntimeError(f"Could not import {SESSION_PATH}")
 
-    minimum_width = pcbnew.FromMM(0.20)
+    minimum_width = pcbnew.FromMM(TRACK_WIDTH)
     for item in board.GetTracks():
         if not isinstance(item, pcbnew.PCB_VIA) and item.GetWidth() < minimum_width:
             item.SetWidth(minimum_width)
 
-    adjust_router_escape(board)
     add_ground_zone(board, pcbnew.F_Cu)
     add_ground_zone(board, pcbnew.B_Cu)
     move_stereo_jack(board)
