@@ -27,8 +27,9 @@ PMOD connection for stacking or logic-analyzer access.
 The [CTVT Energy DSP](https://github.com/whatnick/tt-ctvt-energy-dsp)
 repository contains the companion Tiny Tapeout design. Its working first stage
 captures ADS131M02 frames, performs time-shared multiply-accumulate operations,
-and publishes coherent voltage, current, and active-power moments over a host
-SPI interface. The roadmap adds calibrated RMS and energy, phase/frequency,
+generates the ADC clock and reset, and publishes coherent voltage, current,
+active-power, RMS, and energy measurements over a separate host SPI interface.
+The roadmap adds full ADC register configuration, gain/phase calibration,
 power-quality events, and resource-efficient Goertzel harmonic analysis.
 
 ## Signal path
@@ -60,7 +61,7 @@ AC/AC jack -> balanced divider -> protection -> differential RC ---+-> ADS131M02
 ## PMOD interface
 
 J1 is the right-angle male peripheral connector. J4 is a vertical female
-Wurth `613012243121` pass-through socket; all twelve pins are connected
+Wurth `61301221821` vertical pass-through socket; all twelve pins are connected
 one-to-one for PMOD chaining.
 
 | Pin | Signal | Direction at CTVT | Purpose |
@@ -77,6 +78,22 @@ one-to-one for PMOD chaining.
 | 10 | RESERVED | Pass-through | Reserved chained signal |
 | 11 | GND | Power | Ground |
 | 12 | +3V3 | Power | Regulated 3.3 V input |
+
+The Tiny Tapeout companion maps the PMOD signals as follows:
+
+| PMOD signal | Tiny Tapeout signal |
+|---|---|
+| CS | `uio[0]` |
+| MOSI | `uio[1]` |
+| MISO | `uio[2]` |
+| SCLK | `uio[3]` |
+| DRDY | `uio[4]` |
+| RESET | `uio[5]` |
+| CLK_HOST | `uio[6]` |
+
+This standard Pmod ordering lets the board plug directly into the
+bidirectional Tiny Tapeout/FabricFox connector. The host processor uses the
+separate input and output ports, so it does not contend with the ADC bus.
 
 ## Scaling and calibration
 
@@ -140,6 +157,18 @@ Manufacturing exports are generated into ignored `gerbers/` and `bom/`
 directories. The reviewed orderable BOM and DigiKey sourcing notes are
 committed in [`docs/ctvt-pmod-sourced-bom.csv`](docs/ctvt-pmod-sourced-bom.csv)
 and [`docs/bom-sourcing.md`](docs/bom-sourcing.md).
+
+Generate the Elecrow PCBA upload package with:
+
+```powershell
+python scripts\export_elecrow.py
+```
+
+This creates `manufacturing/elecrow/ctvt-pmod-elecrow-pcba.zip` containing a
+Gerber ZIP, curated BOM, component position file, and current KiCad DRC/ERC
+reports. See
+[`docs/elecrow-manufacturing.md`](docs/elecrow-manufacturing.md) for package
+contents and assembly-review notes.
 
 ## Repository contents
 

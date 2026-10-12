@@ -3,8 +3,8 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Through hole angled socket strip, 2x06, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated")
-	(tags "PMOD host expanded GPIO hole angled socket strip THT 2x06 2.54mm double row")
+	(descr "Through hole vertical socket strip, 2x06, 2.54mm pitch, PMOD logical pin numbering")
+	(tags "PMOD host expanded GPIO hole vertical socket strip THT 2x06 2.54mm double row")
 	(property "Reference" "J4"
 		(at -5.65 -2.77 0)
 		(layer "F.SilkS")
@@ -17,7 +17,7 @@
 			)
 		)
 	)
-	(property "Value" "613012243121"
+	(property "Value" "61301221821"
 		(at -5.65 15.47 0)
 		(layer "F.Fab")
 		(hide yes)

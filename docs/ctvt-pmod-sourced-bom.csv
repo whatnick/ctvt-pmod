@@ -9,7 +9,7 @@ FB1,1,600R@100MHz,TDK,MPZ1608S601ATA00,DigiKey,445-MPZ1608S601ATA00CT-ND,0603,60
 J1,1,Tiny Tapeout PMOD,Samtec,TSW-106-08-G-D-RA,DigiKey,612-TSW-106-08-G-D-RA-ND,2x6 2.54 mm THT,Right-angle male header
 J2,1,SJ-3523-SMT-TR,Same Sky,SJ-3523-SMT-TR,DigiKey,CP-3523SJCT-ND,SMD,3.5 mm stereo jack
 J3,1,PJ-002BH-SMT-TR,Same Sky,PJ-002BH-SMT-TR,DigiKey,CP-002BHPJCT-ND,SMD,2.5 x 5.5 mm barrel jack
-J4,1,613012243121,Wurth Elektronik,613012243121,DigiKey,732-613012243121-ND,2x6 2.54 mm THT,Vertical female socket
+J4,1,61301221821,Wurth Elektronik,61301221821,DigiKey,732-61301221821-ND,2x6 2.54 mm THT,Vertical female socket
 "R1 R2",2,6.49R 0.1%,TE Connectivity Holsworthy,RN73C2A6R49BTDF,Mouser,RN73C2A6R49BTDF,0805,10 ppm/C thin film
 "R3 R4 R9 R10",4,1k 0.1%,Susumu,RG1608P-102-B-T5,DigiKey,RG16P1.0KBCT-ND,0603,25 ppm/C thin film
 "R5 R6",2,100k 0.1%,Panasonic Industry,ERA-6AEB104V,DigiKey,P100KDACT-ND,0805,25 ppm/C thin film
