@@ -6264,7 +6264,7 @@
 				)
 			)
 		)
-		(property "Value" "613012243121"
+		(property "Value" "61301221821"
 			(at 248.92 154.94 0)
 			(effects
 				(font
@@ -6299,7 +6299,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "613012243121"
+		(property "MPN" "61301221821"
 			(at 248.92 157.48 0)
 			(effects
 				(font
@@ -6308,7 +6308,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey PN" "732-613012243121-ND"
+		(property "DigiKey PN" "732-61301221821-ND"
 			(at 248.92 157.48 0)
 			(effects
 				(font

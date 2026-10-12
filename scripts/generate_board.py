@@ -246,7 +246,7 @@ def add_components(board: pcbnew.BOARD) -> None:
     j4 = add_footprint(
         board,
         "J4",
-        "613012243121",
+        "61301221821",
         "ctvt-pmod",
         "PinSocket_2x06_P2.54mm_PMODHost1A",
         41.35,

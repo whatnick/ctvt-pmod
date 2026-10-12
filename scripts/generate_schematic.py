@@ -636,14 +636,14 @@ def build_legacy_schematic() -> str:
         Component(
             "PMOD_PASSIVE",
             "J4",
-            "613012243121",
+            "61301221821",
             "ctvt-pmod:PinSocket_2x06_P2.54mm_PMODHost1A",
             9800,
             6200,
             {
                 "Manufacturer": "Wurth Elektronik",
-                "MPN": "613012243121",
-                "DigiKey PN": "732-613012243121-ND",
+                "MPN": "61301221821",
+                "DigiKey PN": "732-61301221821-ND",
                 "Description": "Vertical female PMOD pass-through connector",
             },
         ),
