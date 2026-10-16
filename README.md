@@ -32,6 +32,11 @@ active-power, RMS, and energy measurements over a separate host SPI interface.
 The roadmap adds full ADC register configuration, gain/phase calibration,
 power-quality events, and resource-efficient Goertzel harmonic analysis.
 
+See [ADC PMOD comparative analysis](docs/adc-pmod-comparison.md) for a
+comparison with the commercial ADC and mixed-signal boards listed in
+[`docs/expansion_boards__daughter_cards.csv`](docs/expansion_boards__daughter_cards.csv),
+including the AD7124-8 precision delta-sigma PMOD.
+
 ## Signal path
 
 ```text
