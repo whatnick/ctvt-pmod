@@ -33,3 +33,6 @@ connectors because Elecrow must quote their manual or selective-solder assembly.
 Before approving the order, confirm any proposed substitutions, the right-angle
 orientation of `J1`, the socket orientation of `J4`, and the polarity/orientation
 of `D1`, `D2`, and `U1`.
+
+The verified answers and supplier-ready response are recorded in
+[`elecrow-assembly-approval.md`](elecrow-assembly-approval.md).
