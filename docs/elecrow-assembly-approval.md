@@ -85,8 +85,10 @@ top board view, pin 1 is the lower-left package pin.
 > U1 is ADS131M02IPWR in TSSOP-20. Align the package pin-1 dot/chamfer with the
 > PCB pin-1 triangle; pin 1 is the lower-left pin in the top board view.
 >
-> Before assembling the remaining boards, please send one clear first-article
-> top-side photograph showing J1, J4, D1, D2, and U1.
+> If assembly has not started, please send one clear first-article top-side
+> photograph showing J1, J4, D1, D2, and U1. If the order is already in
+> production, do not pause it solely for this photograph; a clear top-side
+> photograph before shipment is sufficient.
 
 ## Verification
 
